@@ -1,3 +1,5 @@
+import { bindActionCreators } from "redux";
+
 export const initialState = {
   additionalPrice: 0,
   car: {
@@ -16,14 +18,26 @@ export const initialState = {
 };
 
 export const carReducer = (state = initialState, action) => {
-  // console.log("state", state);
-
   switch (action.type) {
-    case "Add_New_Feature":
+    case "ADDITIONAL_NEW_FEATURE":
       return {
         ...state,
       };
+    case "REMOVE NEW FEATURE":
+      return {
+        ...state,
+      };
+
+    case "ADDED FEATURES":
+      return {
+        ...state,
+      };
+
     default:
       return state;
   }
 };
+
+// Additional New Feature
+// Remove New Feature
+//Added Features
