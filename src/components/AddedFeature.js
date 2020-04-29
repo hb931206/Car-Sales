@@ -1,5 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
+
+import { removeFeature } from "../actions/carAction";
 
 const AddedFeature = (props) => {
   return (
@@ -10,8 +13,5 @@ const AddedFeature = (props) => {
     </li>
   );
 };
-const mapStatetoProps = (state) => {
-  return {};
-};
 
-export default connect()(AddedFeature);
+export default AddedFeature;

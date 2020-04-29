@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+
+import { buyItem } from "../actions/carAction";
 
 const AdditionalFeature = (props) => {
   return (
@@ -12,8 +14,4 @@ const AdditionalFeature = (props) => {
   );
 };
 
-const mapStatetoProps = (state) => {
-  return {};
-};
-
-export default connect(mapStatetoProps, {})(AdditionalFeature);
+export default AdditionalFeature;

@@ -19,7 +19,7 @@ export const initialState = {
 
 export const carReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADDITIONAL_NEW_FEATURE":
+    case "ADD_NEW_FEATURE":
       return {
         ...state,
         additionalFeatures: state.additionalFeatures.filter((item) => {
@@ -34,6 +34,11 @@ export const carReducer = (state = initialState, action) => {
     case "Remove_Feature":
       return {
         ...state,
+        additionalPrize: state.additionalPrice - action.payload.price,
+        features: state.additionalFeatures.filter((item) => {
+          return item.id !== action.payload.id;
+        }),
+        additionalFeatures: [...state.additionalFeatures, action.payload],
       };
 
     default:
@@ -43,4 +48,3 @@ export const carReducer = (state = initialState, action) => {
 
 // Additional New Feature
 // Remove New Feature
-//Added Features
