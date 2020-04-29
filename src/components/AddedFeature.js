@@ -4,6 +4,8 @@ import { useDispatch } from "react-redux";
 
 import { removeFeature } from "../actions/carAction";
 
+const dispatch = useDispatch();
+
 const AddedFeature = (props) => {
   return (
     <li>

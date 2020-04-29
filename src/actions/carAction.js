@@ -1,3 +1,6 @@
+export const ADD_NEW_FEATURE = "ADD_NEW_FEATURE";
+export const Remove_Feature = "Remove_FEATURE";
+
 const buyItem = (item) => {
   // dipsatch an action here to add an item
   return { type: "ADD_NEW_FEATURE", payload: item };
