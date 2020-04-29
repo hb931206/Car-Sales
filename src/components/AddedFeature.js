@@ -2,9 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { useDispatch } from "react-redux";
 
-import { removeFeature } from "../actions/carAction";
-
-const dispatch = useDispatch();
+import { REMOVE_FEATURE } from "../actions/carAction";
 
 const AddedFeature = (props) => {
   return (

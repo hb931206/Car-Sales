@@ -1,5 +1,5 @@
 export const ADD_NEW_FEATURE = "ADD_NEW_FEATURE";
-export const Remove_Feature = "Remove_FEATURE";
+export const REMOVE_FEATURE = "REMOVE_FEATURE";
 
 const buyItem = (item) => {
   // dipsatch an action here to add an item
@@ -7,5 +7,5 @@ const buyItem = (item) => {
 };
 
 const removeFeature = (item) => {
-  return { type: "Remove_Feature", payload: item };
+  return { type: "REMOVE_FEATURE", payload: item };
 };
